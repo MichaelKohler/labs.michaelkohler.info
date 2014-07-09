@@ -1,0 +1,13 @@
+{
+  "name": "Testapps",
+  "description": "Testapps",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": ""
+  },
+  "developer": {
+    "name": "Michael Kohler",
+    "url": "http://www.michaelkohler.info"
+  },
+  "default_locale": "en"
+}

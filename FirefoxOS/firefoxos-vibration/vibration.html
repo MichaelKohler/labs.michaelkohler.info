@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<h1>Test</h1>
+<button id="installButton">Install app</button>
+<script>
+navigator.vibrate([1000, 500, 1000, 500, 1000]);
+
+var manifest_url = location.href + 'manifest.webapp';
+document.querySelector("#installButton").addEventListener('click', function() {        
+	var installapp = navigator.mozApps.install(manifest_url);
+	installapp.onsuccess = function(data) {
+	  alert("App installed");
+	};
+	installapp.onerror = function() {
+	  alert("Not installed: " + installapp.error.name);
+	};
+});
+</script>
